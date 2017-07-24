@@ -64,13 +64,9 @@ Users are configured as follows:
 ```yaml
 users:
   - username: # Unix user name
-    # Extensions to be installed if not already present
     visual_studio_code_extensions:
       - # extension 1
       - # extension 2
-    # Extensions to be uninstalled if not already absent
-    visual_studio_code_extensions_absent:
-      - # extension 3
 ```
 
 Example Playbook
@@ -87,11 +83,7 @@ Example Playbook
             - wholroyd.jinja
             - donjayamanne.python
           visual_studio_code_extensions_absent:
-<<<<<<< HEAD
             - streetsidesoftware.code-spell-checker
-=======
-            - seanmcbreen.Spell
->>>>>>> upstream/master
 ```
 
 More Roles From GantSign
